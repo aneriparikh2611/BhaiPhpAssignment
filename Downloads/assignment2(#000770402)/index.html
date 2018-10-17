@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!-- Author Name: Aneri Parikh-->
+<!--Student ID: 000770402-->
+<html>
+    <head>
+        <title>Store information page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--css for form-->
+        <style type="text/css">
+            body{
+                background-color: bisque;
+            }
+
+            .container {
+                border-radius: 5px;
+                background-color: #ccc;
+                padding: 20px;
+                height: 50vh;
+                width: 50vh;
+                margin-left: 35%;
+                margin-top: 5%;
+            }
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+                margin-top: 10%;
+            }
+            input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 60%;
+                margin-top: 20%;
+
+            }
+            h1 {
+                padding-top: 5%;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <h1> Which store you want to Visit? Please fill in the Info</h1>
+
+            <div class="container">
+                <!-- store details form-->
+                <form action="page1.php" method="POST">
+                    <table>
+                        <tr>
+                            <td>
+                                Store Name
+                            </td>
+                            <td>
+                                <input type="text" name="StoreName" value="" placeholder="(eg. The 905 Grocery Stor)" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Address
+                            </td>
+                            <td>
+                                <input type="text" name="Address" value="" placeholder="(eg. 45 Forest ave.)" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                City
+                            </td>
+                            <td>
+                                <input type="text" name="City" value="" placeholder="(eg. Hamilton)" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Postal Code
+                            </td>
+                            <td>
+                                <input type="text" name="PostalCode" value="" placeholder="(eg. L8N 1X3)" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="Go!" />
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
