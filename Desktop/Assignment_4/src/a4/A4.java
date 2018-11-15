@@ -1,5 +1,8 @@
 package a4;
+/**
+ * 25. Negated boolean variable names must be avoided.
 
+ */
 /**
  * Library of statistical functions using Generics for different statistical
  * calculations.
@@ -9,17 +12,27 @@ package a4;
  *
  * @author Joey Programmer
  */
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-
+/**
+ * 
+ * @author prparikh
+ */
 public final class A4 {
-
-    public static <T extends Number> double avg(ArrayList<T> x, boolean incneg) {
-        double s = sum(x, incneg);
+/**
+ * 
+ * @param <T>
+ * @param x
+ * @param isPositive
+ * @return 
+ */
+    public static <T extends Number> double avg(ArrayList<T> x, boolean isPositive) {
+        double s = sum(x, isPositive);
         int c = 0;
         for (int i = 0; i < x.size(); i++) {
-            if (incneg || x.get(i).doubleValue() >= 0) {
+            if (isPositive || x.get(i).doubleValue() >= 0) {
                 c++;
             }
         }
